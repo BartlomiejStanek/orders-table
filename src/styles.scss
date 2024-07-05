@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+ }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body {
+  --row-color: rgb(220, 225, 229);
+  --hover-row-color: rgb(201, 209, 216);
+  --header-color: rgb(233, 237, 241);
+  --text-color: rgb(14, 15, 26);
+  --profit-positive: rgb(60, 193, 149);
+  --profit-negative: rgb(249,76, 76);
+}
+body.dark-theme{
+  --row-color: rgba(14, 15, 26, .25);
+  --header-color: rgb(42, 56, 71);
+  --hover-row-color: rgba(53, 71, 89, .5);
+  --text-color: rgb(198, 210, 219);
+  --profit-positive: rgb(60, 193, 149);
+  --profit-negative: rgb(249,76, 76);
+}

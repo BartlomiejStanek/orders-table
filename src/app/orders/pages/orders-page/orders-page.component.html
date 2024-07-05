@@ -1,0 +1,4 @@
+<ng-container *ngIf="(orders$ | async) as orders">
+  <app-orders-table [orders]="orders ? orders : []"></app-orders-table>
+</ng-container>
+

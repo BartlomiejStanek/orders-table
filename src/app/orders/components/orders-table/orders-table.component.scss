@@ -1,0 +1,73 @@
+.orders {
+  width: 100%;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  &--header{
+    color: var(--text-color);
+  }
+  &--group{
+    background-color: var(--row-color);
+    color: var(--text-color);
+    cursor: pointer;
+    & td{
+      border-bottom-width: 0;
+    }
+    &:hover {
+      background:var(--hover-row-color);
+    }
+    &--symbol-cell{
+      display: flex;
+      align-items: center;;
+    }
+  }
+  &--row{
+    background-color: var(--row-color);
+    color: var(--text-color);
+  }
+  &--cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--item{
+      padding: 1rem 0;
+    }
+  }
+  &--icon{
+    cursor: pointer;
+    color: rgb(15, 164, 209)
+  }
+  &--profit{
+    color: var(--profit-positive);
+    &__negative{
+      color: var(--profit-negative);
+    }
+  }
+  &--count{
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+    color: rgb(198, 210, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+}
+
+.mat-column{
+  &-expand{
+    max-width: 2rem;
+  }
+  &-closeOrder{
+    max-width: 2rem;
+  }
+  &-profit{
+    width: 10rem;
+  }
+}
+
+tr.orders--row{
+  height: 0;
+}
+
